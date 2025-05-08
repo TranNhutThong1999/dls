@@ -14,9 +14,9 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/MyCoolButton.tsx'),
-      name: 'MyCoolButton',
-      fileName: 'MyCoolButton',
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'dls',
+      fileName: (format) => `index.${format === 'es' ? 'js' : 'umd.js'}`,
       formats: ['es', 'umd']
     },
     rollupOptions: {
