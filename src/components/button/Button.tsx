@@ -1,8 +1,8 @@
 import React from 'react';
-import './MyCoolButton.css';
-import { MyCoolButtonProps } from './MyCoolButton.interface';
+import './button.css';
+import { ButtonProps } from './Button.interface';
 
-const MyCoolButton: React.FC<MyCoolButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
 	type = 'button',
 	title,
 	onClick = () => {},
@@ -14,4 +14,4 @@ const MyCoolButton: React.FC<MyCoolButtonProps> = ({
 	);
 };
 
-export default MyCoolButton;
+export default Button;

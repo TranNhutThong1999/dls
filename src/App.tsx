@@ -1,6 +1,6 @@
 import React from 'react';
-import MyCoolButton from './MyCoolButton';
 import './App.css';
+import Button from './components/button/Button';
 
 const App: React.FC = () => {
 	const handleClick = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
 		<div className="app">
 			<h1>My Cool Button Demo</h1>
 			<div className="button-container">
-				<MyCoolButton title="Click Me!" onClick={handleClick} />
+				<Button title="Click Me!" onClick={handleClick} />
 			</div>
 		</div>
 	);
